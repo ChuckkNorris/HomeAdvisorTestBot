@@ -126,6 +126,7 @@
     </Compile>
     <Compile Include="Interactions\ChatBot.cs" />
     <Compile Include="Interactions\SandwichBot.cs" />
+    <Compile Include="Models\ServiceRequest.cs" />
     <Compile Include="NaturalLanguage\Luis.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -141,7 +142,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Resource\" />
   </ItemGroup>
   <PropertyGroup>
