@@ -27,9 +27,9 @@ namespace HomeAdvisorTestBot.Controllers {
             if (message.Type == ActivityTypes.Message) {
                 ConnectorClient connector = new ConnectorClient(new Uri(message.ServiceUrl));
 
-                Activity replyToConversation = await chat.HandleChat(message);
+                Activity replyToConversation = await chat.HandleChat(connector, message);
 
-                await connector.Conversations.SendToConversationAsync(replyToConversation);
+               // await connector.Conversations.SendToConversationAsync(replyToConversation);
             }
             else {
                 HandleSystemMessage(message);
